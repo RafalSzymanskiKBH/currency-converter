@@ -1,0 +1,18 @@
+.main {
+    background-color: #e7e7e7cd;
+    color: #00008b;
+    border-width: 3px;
+    border-color: #e7e7e7;
+    border-style: inset;
+    border-radius: 10px;
+    margin: 10px auto;
+    padding: 0px 20px;
+    box-shadow: 10px 5px 10px 1px rgba(0, 0, 0, 0.745);
+    text-shadow: 1px 2px 5px #00008b;
+    max-width: 600px;
+}
+
+.main__legend {
+    font-size: 12px;
+    
+}

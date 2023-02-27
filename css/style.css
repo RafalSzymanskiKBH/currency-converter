@@ -1,0 +1,21 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  ::after ::before {
+    box-sizing: inherit;
+  }
+  
+  .body {
+    background-image: url(https://thumbs.dreamstime.com/z/t%C5%82o-pieni%C4%85dza-banknoty-spadaj%C4%85ce-na-bia%C5%82e-pieni%C4%99dzy-sto-euro-europejskie-spadek-%C5%9Brodk%C3%B3w-pieni%C4%99%C5%BCnych-pieni%C4%85dz-w-got%C3%B3wce-164493701.jpg);
+    color: #0e0e0ecd;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+  }
+  
+  .cs-bodyTheme-dark {
+    background: #0e0e0ecd;
+  }
+  
+  

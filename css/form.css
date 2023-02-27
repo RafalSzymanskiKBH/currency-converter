@@ -1,0 +1,75 @@
+.form {
+    text-align: center;
+    max-width: 600px;
+  
+    
+}
+
+.form__legend {
+    background-color: #0e0e0ecd;
+    color: #e7e7e7;
+    border-color: black;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-shadow: 1px 2px 5px #00008b;
+    text-align: center;
+    min-width: 220px;
+    
+}
+
+.form__fieldset {
+    margin: 10px auto;
+    border-radius: 10px;
+    border-color: #0e0e0ecd;
+    border-width: 2px;
+    background-color: #ffffffc3;
+    text-align: right;
+    min-width: 220px;
+    
+}
+
+.form__label {
+    display: inline-block;
+    padding: 5px 40px;
+    margin: 0px auto;
+    text-align: right;
+    
+}
+
+.form__input {
+    background-color: #0e0e0ecd;
+    color: #e7e7e7c7;
+    padding: 5px;
+    min-width: 220px;
+    border-radius: 10px;
+    text-shadow: 1px 2px 5px #eee;
+    text-align: center;
+    margin-right: 40px;
+}
+
+.form__input-readonly {
+    background-color: #0e0e0ecd;
+    color: #0000ff;
+    min-width: 220px;
+}
+
+.form__button {
+    min-width: 220px;
+    color: #ddd;
+    text-decoration: none;
+    background-color: #0e0e0ecd;
+    border-radius: 10px;
+    margin: 5px;
+    text-shadow: 1px 2px 5px #eee;
+    font-size: 20px;
+    padding: 5px 30px;
+    cursor: pointer;
+}
+
+.form__button:hover {
+    color: #0000d7;
+    outline: none;
+}
+.form__button:active{
+    color: #0000ff;
+}
