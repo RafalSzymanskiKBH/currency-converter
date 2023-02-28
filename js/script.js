@@ -150,6 +150,6 @@ formElement.addEventListener("submit", (event) => {
     let exchange = parseFloat(exchangeRate);
     let result = amount * exchange;
 
-    resultElement.value = `${result.toFixed(2)} ${currencyOutElement.value}`;
+    resultElement.value = `${result.toFixed(4)} ${currencyOutElement.value}`;
 });
 
