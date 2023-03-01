@@ -49,7 +49,7 @@
 
 .form__input-readonly {
     background-color: #0e0e0ecd;
-    color: #0000ff;
+    color: #ffffff;
     min-width: 220px;
 }
 
@@ -67,7 +67,7 @@
 }
 
 .form__button:hover {
-    color: #0000d7;
+    color: #2f44ff;
     outline: none;
 }
 .form__button:active{
