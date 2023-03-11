@@ -1,18 +1,18 @@
 console.log("Witaj tutaj Kalkulator");
 
-let formElement = document.querySelector(".js-currencyForm");
-let amountElement = document.querySelector(".js-currencyAmount");
-let currencyOutElement = document.querySelector(".js-currencyOutElement");
-let currencyInElement = document.querySelector(".js-currencyInElement");
-let resultElement = document.querySelector(".js-currencyResult");
+const formElement = document.querySelector(".js-currencyForm");
+const amountElement = document.querySelector(".js-currencyAmount");
+const currencyOutElement = document.querySelector(".js-currencyOutElement");
+const currencyInElement = document.querySelector(".js-currencyInElement");
+const resultElement = document.querySelector(".js-currencyResult");
 
-let PLN = 1;
-let GBP = 5.36;
-let EUR = 4.72;
-let USD = 4.46;
-let CHF = 4.77;
-let DKK = 0.63;
-let SEK = 0.43;
+const PLN = 1;
+const GBP = 5.36;
+const EUR = 4.72;
+const USD = 4.46;
+const CHF = 4.77;
+const DKK = 0.63;
+const SEK = 0.43;
 
 formElement.addEventListener("submit", (event) => {
     event.preventDefault();
