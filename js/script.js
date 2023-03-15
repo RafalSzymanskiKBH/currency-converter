@@ -1,158 +1,164 @@
 {
     console.log("Witaj tutaj Kalkulator");
 
-const formElement = document.querySelector(".js-currencyForm");
-const currencyOutElement = document.querySelector(".js-currencyOutElement");
-const currencyInElement = document.querySelector(".js-currencyInElement");
+    const calculateResult = (exchangeRate,currencyChange) => {
+        const currencyOutElement = document.querySelector(".js-currencyOutElement");
+        const currencyInElement = document.querySelector(".js-currencyInElement");
+        const currencyChange = `${currencyInElement.value}/${currencyOutElement.value}`;
+        const PLN = 1;
+        const GBP = 5.36;
+        const EUR = 4.72;
+        const USD = 4.46;
+        const CHF = 4.77;
+        const DKK = 0.63;
+        const SEK = 0.43;
 
-formElement.addEventListener("submit", (event) => {
-    event.preventDefault();
+        switch (currencyChange) {
+            case "PLN/EUR":
+                return exchangeRate = PLN / EUR;
 
-    const currencyChange = `${currencyInElement.value}/${currencyOutElement.value}`;
-    const PLN = 1;
-    const GBP = 5.36;
-    const EUR = 4.72;
-    const USD = 4.46;
-    const CHF = 4.77;
-    const DKK = 0.63;
-    const SEK = 0.43;
-    switch (currencyChange) {
-        case "PLN/EUR":
-            exchangeRate = PLN / EUR;
-            break;
-        case "PLN/USD":
-            exchangeRate = PLN / USD;
-            break;
-        case "PLN/GBP":
-            exchangeRate = PLN / GBP;
-            break;
-        case "PLN/CHF":
-            exchangeRate = PLN / CHF;
-            break;
-        case "PLN/DKK":
-            exchangeRate = PLN / DKK;
-            break;
-        case "PLN/SEK":
-            exchangeRate = PLN / SEK;
-            break;
-        case "EUR/PLN":
-            exchangeRate = EUR / PLN;
-            break;
-        case "EUR/USD":
-            exchangeRate = EUR / USD;
-            break;
-        case "EUR/GBP":
-            exchangeRate = EUR / GBP;
-            break;
-        case "EUR/CHF":
-            exchangeRate = EUR / CHF;
-            break;
-        case "EUR/DKK":
-            exchangeRate = EUR / DKK;
-            break;
-        case "EUR/SEK":
-            exchangeRate = EUR / SEK;
-            break;
-        case "USD/PLN":
-            exchangeRate = USD / PLN;
-            break;
-        case "USD/EUR":
-            exchangeRate = USD / EUR;
-            break;
-        case "USD/GBP":
-            exchangeRate = USD / GBP;
-            break;
-        case "USD/CHF":
-            exchangeRate = USD / CHF;
-            break;
-        case "USD/DKK":
-            exchangeRate = USD / DKK;
-            break;
-        case "USD/SEK":
-            exchangeRate = USD / SEK;
-            break;
-        case "GBP/PLN":
-            exchangeRate = GBP / PLN;
-            break;
-        case "GBP/EUR":
-            exchangeRate = GBP / EUR;
-            break;
-        case "GBP/USD":
-            exchangeRate = GBP / USD;
-            break;
-        case "GBP/CHF":
-            exchangeRate = GBP / CHF;
-            break;
-        case "GBP/DKK":
-            exchangeRate = GBP / DKK;
-            break;
-        case "GBP/CHF":
-            exchangeRate = GBP / SEK;
-            break;
-        case "CHF/PLN":
-            exchangeRate = CHF / PLN;
-            break;
-        case "CHF/EUR":
-            exchangeRate = CHF / EUR;
-            break;
-        case "CHF/GBP":
-            exchangeRate = CHF / GBP;
-            break;
-        case "CHF/USD":
-            exchangeRate = CHF / USD;
-            break;
-        case "CHF/DKK":
-            exchangeRate = CHF / DKK;
-            break;
-        case "CHF/SEK":
-            exchangeRate = CHF / SEK;
-            break;
-        case "DKK/PLN":
-            exchangeRate = DKK / PLN;
-            break;
-        case "DKK/EUR":
-            exchangeRate = DKK / EUR;
-            break;
-        case "DKK/GBP":
-            exchangeRate = DKK / GBP;
-            break;
-        case "DKK/USD":
-            exchangeRate = DKK / USD;
-            break;
-        case "DKK/PLN":
-            exchangeRate = DKK / PLN;
-            break;
-        case "DKK/SEK":
-            exchangeRate = DKK / SEK;
-            break;
-        case "SEK/EUR":
-            exchangeRate = SEK / EUR;
-            break;
-        case "SEK/GBP":
-            exchangeRate = SEK / GBP;
-            break;
-        case "SEK/USD":
-            exchangeRate = SEK / USD;
-            break;
-        case "SEK/CHF":
-            exchangeRate = SEK / CHF;
-            break;
-        case "SEK/DKK":
-            exchangeRate = SEK / DKK;
-            break;
-        default:
-            exchangeRate = 1;
+            case "PLN/USD":
+                return exchangeRate = PLN / USD;
+
+            case "PLN/GBP":
+                return exchangeRate = PLN / GBP;
+
+            case "PLN/CHF":
+                return exchangeRate = PLN / CHF;
+
+            case "PLN/DKK":
+                return exchangeRate = PLN / DKK;
+
+            case "PLN/SEK":
+                return exchangeRate = PLN / SEK;
+
+            case "EUR/PLN":
+                return exchangeRate = EUR / PLN;
+
+            case "EUR/USD":
+                return exchangeRate = EUR / USD;
+
+            case "EUR/GBP":
+                return exchangeRate = EUR / GBP;
+
+            case "EUR/CHF":
+                return exchangeRate = EUR / CHF;
+
+            case "EUR/DKK":
+                return exchangeRate = EUR / DKK;
+
+            case "EUR/SEK":
+                return exchangeRate = EUR / SEK;
+
+            case "USD/PLN":
+                return exchangeRate = USD / PLN;
+
+            case "USD/EUR":
+                return exchangeRate = USD / EUR;
+
+            case "USD/GBP":
+                return exchangeRate = USD / GBP;
+
+            case "USD/CHF":
+                return exchangeRate = USD / CHF;
+
+            case "USD/DKK":
+                return exchangeRate = USD / DKK;
+
+            case "USD/SEK":
+                return exchangeRate = USD / SEK;
+
+            case "GBP/PLN":
+                return exchangeRate = GBP / PLN;
+
+            case "GBP/EUR":
+                return exchangeRate = GBP / EUR;
+
+            case "GBP/USD":
+                return exchangeRate = GBP / USD;
+
+            case "GBP/CHF":
+                return exchangeRate = GBP / CHF;
+
+            case "GBP/DKK":
+                return exchangeRate = GBP / DKK;
+
+            case "GBP/CHF":
+                return exchangeRate = GBP / SEK;
+
+            case "CHF/PLN":
+                return exchangeRate = CHF / PLN;
+
+            case "CHF/EUR":
+                return exchangeRate = CHF / EUR;
+
+            case "CHF/GBP":
+                return exchangeRate = CHF / GBP;
+
+            case "CHF/USD":
+                return exchangeRate = CHF / USD;
+
+            case "CHF/DKK":
+                return exchangeRate = CHF / DKK;
+
+            case "CHF/SEK":
+                return exchangeRate = CHF / SEK;
+
+            case "DKK/PLN":
+                return exchangeRate = DKK / PLN;
+
+            case "DKK/EUR":
+                return exchangeRate = DKK / EUR;
+
+            case "DKK/GBP":
+                return exchangeRate = DKK / GBP;
+
+            case "DKK/USD":
+                return exchangeRate = DKK / USD;
+
+            case "DKK/PLN":
+                return exchangeRate = DKK / PLN;
+
+            case "DKK/SEK":
+                return exchangeRate = DKK / SEK;
+
+            case "SEK/EUR":
+                return exchangeRate = SEK / EUR;
+
+            case "SEK/GBP":
+                return exchangeRate = SEK / GBP;
+
+            case "SEK/USD":
+                return exchangeRate = SEK / USD;
+
+            case "SEK/CHF":
+                return exchangeRate = SEK / CHF;
+
+            case "SEK/DKK":
+                return exchangeRate = SEK / DKK;
+
+            default:
+                return exchangeRate = 1;
+        };
     }
-    const init = () => {
-        const amountElement = document.querySelector(".js-currencyAmount");
+    const updateResultText = (result, currencyOutElement) => {
         const resultElement = document.querySelector(".js-currencyResult");
-    
-        const amount = amountElement.value;
-        const exchange = exchangeRate;
-        const result = amount * exchange;
-    
         resultElement.value = `${result.toFixed(4)} ${currencyOutElement.value}`;
-    }    
+    };
+
+    const onFormSubmit = (event) => {
+        event.preventDefault();
+
+        const amountElement = document.querySelector(".js-currencyAmount");
+        const amount = amountElement.value;
+        const exchange = exchangeRate.value;
+        let result = calculateResult(amount * exchange);
+        updateResultText(result, currencyOutElement);
+    };
+
+    const init = () => {
+        const formElement = document.querySelector(".js-currencyForm");
+        formElement.addEventListener("submit", onFormSubmit);
+    };
     init();
-});
 }
