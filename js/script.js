@@ -145,14 +145,14 @@
     const onFormSubmit = (event) => {
         event.preventDefault();
         const currencyOutElement = document.querySelector(".js-currencyOutElement");
-        const currencyInElement = document.querySelector(".js-currencyInElement"); 
+        const currencyInElement = document.querySelector(".js-currencyInElement");
         const amountElement = document.querySelector(".js-currencyAmount");
         const amount = amountElement.value;
-        currencyChange = `${currencyInElement.value}/${currencyOutElement.value}`;
-        calculateResult(currencyChange);
-        const result =  amount*currencyChange;
+        currencyChange = `${currencyInElement.value}/${currencyOutElement.value}`; 
+        const ratio = calculateResult(currencyChange);
+        result =  amount * ratio;
+        
         updateResultText(result, currencyOutElement);
-
     };
 
     const init = () => {
